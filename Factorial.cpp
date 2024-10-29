@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-/* Función recursiva para calcular el factorial*/
+/** Función recursiva para calcular el factorial**/
 int factorial(int n) {
     if (n <= 1) {
         return 1;
@@ -10,7 +10,7 @@ int factorial(int n) {
     }
 }
 
-/* Función del cajero automático*/
+/** Función del cajero automático**/
 void cajeroAutomatico() {
     int saldo = 20000;
     int opcion;
@@ -50,14 +50,14 @@ void cajeroAutomatico() {
 int main() {
     int opcion;
     do {
-        /*Menu principal*/
+        /**Menu principal**/
         cout << "\n--- Menú Principal ---\n";
         cout << "1. Calcular Factorial\n";
         cout << "2. Usar Cajero Automático\n";
         cout << "3. Salir del programa\n";
         cout << "Seleccione una opción: ";
         cin >> opcion;
-        /*inicio del switch del menu principal*/
+        /**inicio del switch del menu principal**/
         switch (opcion) {
             case 1: {
                 int numero;
@@ -80,8 +80,8 @@ int main() {
             default:
                 cout << "Opción no válida. Intente de nuevo.\n";
         }
-        /* final del menu principal*/
-    }/*salida del ciclo del menu principal*/ 
+        /**final del menu principal**/
+    }/**salida del ciclo del menu principal**/ 
     while (opcion != 3);
 
     return 0;
